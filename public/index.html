@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SteelForge Industries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #4b79a1);
+            color: white;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #434343, #000000);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            width: 60%;
+            margin: auto;
+        }
+
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .service-box {
+            display: inline-block;
+            width: 28%;
+            margin: 15px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .service-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: orange;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .service-box {
+                width: 90%;
+            }
+
+            .hero p {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏭 SteelForge Industries</h1>
+</header>
+
+<section class="hero">
+    <h2>Building the Nation with Strength</h2>
+    <p>We are leading manufacturers of high-quality iron and steel products
+       supplying industries across construction, automotive, and infrastructure sectors.</p>
+    <button class="btn" onclick="contact()">Get Quote</button>
+</section>
+
+<section class="services">
+    <h2>Our Products</h2>
+
+    <div class="service-box">
+        <h3>Structural Steel</h3>
+        <p>High strength beams and columns for mega construction projects.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Iron Rods</h3>
+        <p>Premium grade iron rods ensuring durability and reliability.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Steel Sheets</h3>
+        <p>Corrosion resistant sheets for industrial and commercial use.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 SteelForge Industries | Contact: +91 9876543210
+</footer>
+
+<script>
+    function contact() {
+        alert("Thank you for contacting SteelForge Industries! Our team will reach out soon.");
+    }
+</script>
+
+</body>
+</html>
